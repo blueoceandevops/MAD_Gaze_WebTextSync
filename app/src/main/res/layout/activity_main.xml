@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+    <TextView
+        android:id="@+id/ip_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:background="#0000aa"
+        android:text="Hello World!"
+        android:padding="5dp"
+        android:textSize="30dp"/>
+    <ScrollView
+        android:id="@+id/text_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ip_textview">
+        <TextView
+            android:id="@+id/sync_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="60dp"/>
+    </ScrollView>
+    <madgaze.x5_gesture.view.MADGestureView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/madGestureView" />
+</RelativeLayout>
